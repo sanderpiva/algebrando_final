@@ -136,27 +136,26 @@ Com os valores inseridos, o cálculo foi realizado, e a hipotenusa é aproximada
                             },
                           ),
                         ),
-                        // Action Button
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
-                          child: GestureDetector(
-                            onTap: _calculateHypotenuse,
-                            child: Container(
-                              width: double.infinity,
-                              padding: const EdgeInsets.all(16),
-                              decoration: BoxDecoration(
-                                color: context.colors.primary,
-                                borderRadius: BorderRadius.circular(10),
+                        Center(
+                          child: ElevatedButton(
+                            onPressed: _calculateHypotenuse,
+                            style: ElevatedButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 24,
+                                vertical: 12,
                               ),
-                              child: Center(
-                                child: Text(
-                                  'Calcular Hipotenusa',
-                                  style: context.textStyles.textButtonlabel.copyWith(color: Colors.white),
-                                ),
+                              backgroundColor: context.colors.primary,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
                               ),
+                            ),
+                            child: Text(
+                              'Calcular Hipotenusa',
+                              style: context.textStyles.textButtonlabel.copyWith(color: Colors.white),
                             ),
                           ),
                         ),
+                        const SizedBox(height: 20),
                         // Results Section
                         if (result.isNotEmpty)
                           Column(

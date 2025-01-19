@@ -37,9 +37,9 @@ class _ProportionCalculationScreenState extends State<ProportionCalculationScree
 
       setState(() {
         result = '''
-                A   B
+                A - B
                    x
-                C   D
+                C - D
 \nD * A = C * B
 D = (C * B) / A
 D = (${c.toStringAsFixed(2)} * ${b.toStringAsFixed(2)}) / ${a.toStringAsFixed(2)}
@@ -49,10 +49,8 @@ D = ${d.toStringAsFixed(2)}
 
         explanation = '''
 O cálculo foi realizado usando a fórmula da proporção:
-
 D * A = C * B
-
-Substituímos os valores fornecidos:
+Substituímos os valores fornecidos:\n
 - Valor de A: $a
 - Valor de B: $b
 - Valor de C: $c
@@ -160,21 +158,22 @@ A proporção foi confirmada como válida, já que a relação (B / A) é igual 
                           },
                         ),
                         const SizedBox(height: 20),
-                        // Animated Button
-                        GestureDetector(
-                          onTap: _validateAndCalculate,
-                          child: Container(
-                            width: double.infinity,
-                            padding: const EdgeInsets.all(16),
-                            decoration: BoxDecoration(
-                              color: context.colors.primary,
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'Calcular Proporção',
-                                style: context.textStyles.textButtonlabel.copyWith(color: Colors.white),
+                        Center(
+                          child: ElevatedButton(
+                            onPressed: _validateAndCalculate,
+                            style: ElevatedButton.styleFrom(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 24,
+                                vertical: 12,
                               ),
+                              backgroundColor: context.colors.primary,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                            child: Text(
+                              'Calcular Proporção',
+                              style: context.textStyles.textButtonlabel.copyWith(color: Colors.white),
                             ),
                           ),
                         ),
