@@ -26,7 +26,9 @@ Prints da aplicação:
 
 ![12](https://github.com/user-attachments/assets/e57d7451-fb45-4b43-9670-121c3d1cb058)
 
-![12a](https://github.com/user-attachments/assets/f1b4bd8f-2c01-40e8-a221-bab82a300427)
+![12b](https://github.com/user-attachments/assets/a713ae9f-dd8d-4172-bfa0-9afd4a17e5fb)
+
+
 
 
 
