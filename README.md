@@ -22,6 +22,13 @@ Implementação:
 
 A implementação ocorreu de maneira interativa e colaborativa, principalmente, seguindo as orientações da metodologia ágil Kanban.
 
+Equipe:
+
+Darlene de Souza
+Marcelo Ferreira
+Renan Feliciano Rocha
+Sander Gustavo Piva
+
 Prints da aplicação:
 
 ![12](https://github.com/user-attachments/assets/e57d7451-fb45-4b43-9670-121c3d1cb058)
