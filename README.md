@@ -24,9 +24,9 @@ A implementação ocorreu de maneira interativa e colaborativa, principalmente, 
 
 Equipe:
 
-Darlene de Souza
-Marcelo Ferreira
-Renan Feliciano Rocha
+Darlene de Souza;
+Marcelo Ferreira;
+Renan Feliciano Rocha;
 Sander Gustavo Piva
 
 Prints da aplicação:
